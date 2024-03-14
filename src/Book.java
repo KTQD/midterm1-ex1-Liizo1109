@@ -1,15 +1,16 @@
 class Book extends Item {
-  private String author;
-  private int numberOfPages;
-  private String genre;
+    private String author;
+    private int numberOfPages;
+    private String genre;
 
-  public book(String name, String description, String ID, float price, String author, int numberOfPages, String genre){
-    super(name, description, ID, price);
-    this.author = author;
-    this.numberOfPages = numberOfPages;
-    this.genre = genre;
-  }
-  @Override
+    public Book(String name, String description, String ID, float price, String author, int numberOfPages, String genre) {
+        super(name, description, ID, price);
+        this.author = author;
+        this.numberOfPages = numberOfPages;
+        this.genre = genre;
+    }
+
+    @Override
     public void showInfo() {
         System.out.println("Name: " + name);
         System.out.println("Description: " + getDescription());
